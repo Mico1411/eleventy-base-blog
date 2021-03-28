@@ -8,6 +8,10 @@ const markdownItAnchor = require("markdown-it-anchor");
 
 module.exports = function(eleventyConfig) {
   // Add plugins
+    dir: {
+      input: "views",
+      output; "dist"
+    }
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
